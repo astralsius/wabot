@@ -2,40 +2,46 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': 'Principal',
-  'game': 'Juego',
-  'xp': 'Exp & Limite',
+  'main': 'Main',
+  'game': 'Game',
+  'xp': 'Exp & Limit',
   'sticker': 'Sticker',
   'kerang': 'Kerang Ajaib',
   'quotes': 'Quotes',
-  'admin': 'Administrador',
-  'group': 'Grupo',
+  'admin': 'Admin',
+  'group': 'Group',
   'premium': 'Premium',
   'internet': 'Internet',
   'anonymous': 'Anonymous Chat',
   'nulis': 'MagerNulis & Logo',
-  'downloader': 'Descargas',
-  'tools': 'Herramientas',
-  'fun': 'Entretenimiento',
+  'downloader': 'Downloader',
+  'tools': 'Tools',
+  'fun': 'Fun',
   'database': 'Database',
   'jadibot': 'Jadi Bot',
-  'owner': 'Dueño',
+  'owner': 'Owner',
   'host': 'Host',
-  'advanced': 'Avanzado',
+  'advanced': 'Advanced',
   'info': 'Info',
   '': 'No Category',
 }
 const defaultMenu = {
   before: `
 ╭─「 %me 」
-│ Hola, %name!
+│ Hai, %name!
 │
-│ Tienes *%limit Limit*
-│ Nivel *%level (%exp / %maxexp)* [%xp4levelup otra vez para levelup]
-│ %totalexp XP en total
+│ Tersisa *%limit Limit*
+│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
+│ %totalexp XP in Total
+│ 
+│ Tanggal: *%week %weton, %date*
+│ Tanggal Islam: *%dateIslamic*
+│ Waktu: *%time*
 │
-│ Tiempo encendido: *%uptime (%muptime)*
+│ Uptime: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
+│ Github:
+│ %github
 ╰────
 %readmore`.trimStart(),
   header: '╭─「 %category 」',

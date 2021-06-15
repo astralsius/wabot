@@ -1,16 +1,16 @@
 let handler = async (m, { conn, command, text }) => {
   conn.reply(m.chat, `
-*Pregunta:* ${command} ${text}
-*Respuesta:* ${pickRandom(['Sí','Tal vez sí','Quizas','Probablemente no','No','Definitivamente no'])}
+*Pertanyaan:* ${command} ${text}
+*Jawaban:* ${pickRandom(['Ya','Mungkin iya','Mungkin','Mungkin tidak','Tidak','Tidak mungkin'])}
 `.trim(), m, m.mentionedJid ? {
     contextInfo: {
       mentionedJid: m.mentionedJid
     }
   } : {})
 }
-handler.help = ['es <pregunta>']
-handler.tags = ['concha']
-handler.command = /^es$/i
+handler.help = ['apakah <pertanyaan>']
+handler.tags = ['kerang']
+handler.command = /^apakah$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
