@@ -3,21 +3,12 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
   'main': 'Principal',
-<<<<<<< Updated upstream
   'game': 'Juego',
   'xp': 'Exp & Limite',
-=======
-  'game': 'Juegos',
-  'xp': 'Exp & Limites',
->>>>>>> Stashed changes
   'sticker': 'Sticker',
-  'kerang': 'Concha mágica',
+  'kerang': 'Kerang Ajaib',
   'quotes': 'Quotes',
-<<<<<<< Updated upstream
   'admin': 'Administrador',
-=======
-  'admin': 'Admin',
->>>>>>> Stashed changes
   'group': 'Grupo',
   'premium': 'Premium',
   'internet': 'Internet',
@@ -25,11 +16,7 @@ let tags = {
   'nulis': 'MagerNulis & Logo',
   'downloader': 'Descargas',
   'tools': 'Herramientas',
-<<<<<<< Updated upstream
   'fun': 'Entretenimiento',
-=======
-  'fun': 'Diversion',
->>>>>>> Stashed changes
   'database': 'Database',
   'jadibot': 'Jadi Bot',
   'owner': 'Dueño',
@@ -43,19 +30,9 @@ const defaultMenu = {
 ╭─「 %me 」
 │ Hola, %name!
 │
-<<<<<<< Updated upstream
 │ Tienes *%limit Limit*
 │ Nivel *%level (%exp / %maxexp)* [%xp4levelup otra vez para levelup]
 │ %totalexp XP en total
-=======
-│ Tersisa *%limit Limit*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
-│ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Hora: *%time*
->>>>>>> Stashed changes
 │
 │ Tiempo encendido: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg

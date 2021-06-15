@@ -18,18 +18,18 @@ let handler = async (m, { conn, text, participants }) => {
       invite_code,
       invite_code_exp
     }]] = Object.entries(user)
-    let teks = `Atractivo @${jid.split('@')[0]} usando invitacion...`
+    let teks = `Mengundang @${jid.split('@')[0]} menggunakan invite...`
     m.reply(teks, null, {
       contextInfo: {
         mentionedJid: conn.parseMention(teks)
       }
     })
-    await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Invitacion para entrar a mi grupo de whatsapp', jpegThumbnail ? {
+    await conn.sendGroupV4Invite(m.chat, jid, invite_code, invite_code_exp, false, 'Invitation to join my WhatsApp group', jpegThumbnail ? {
       jpegThumbnail
     } : {})
   }
 }
-handler.help = ['add', '+'].map(v => v + ' numero,numero')
+handler.help = ['add', '+'].map(v => v + ' nomor,nomor')
 handler.tags = ['admin']
 handler.command = /^(add|\+)$/i
 handler.owner = false

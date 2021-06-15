@@ -3,13 +3,8 @@ handler.before = m => {
   let user = global.DATABASE.data.users[m.sender]
   if (user.afk > -1) {
     m.reply(`
-<<<<<<< Updated upstream
 Se detuvo el AFK${user.afkReason ? ' despues de ' + user.afkReason : ''}
 Selama ${clockString(new Date - user.afk)}
-=======
-Dejaste AFK${user.afkReason ? ' despues ' + user.afkReason : ''}
-Durante ${clockString(new Date - user.afk)}
->>>>>>> Stashed changes
 `.trim())
     user.afk = -1
     user.afkReason = ''
@@ -23,11 +18,7 @@ Durante ${clockString(new Date - user.afk)}
     let reason = user.afkReason || ''
     m.reply(`
 No lo etiquetes!
-<<<<<<< Updated upstream
 Esta AFK ${reason ? 'razon ' + reason : 'sin razon'}
-=======
-Esta en afk ${reason ? 'Con razon ' + reason : 'sin razon'}
->>>>>>> Stashed changes
 Durante ${clockString(new Date - afkTime)}
 `.trim())
   }

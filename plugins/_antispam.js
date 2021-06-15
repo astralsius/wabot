@@ -8,11 +8,7 @@ handler.all = async function (m) {
         if (m.messageTimestamp.toNumber() - this.spam[m.sender].lastspam > 10) {
             if (this.spam[m.sender].count > 10) {
                 //global.DATABASE._data.users[m.sender].banned = true
-<<<<<<< Updated upstream
                 m.reply('*No spam chinchu!*')
-=======
-                m.reply('*No spamees chinchu*')
->>>>>>> Stashed changes
             }
             this.spam[m.sender].count = 0
             this.spam[m.sender].lastspam = m.messageTimestamp.toNumber()
