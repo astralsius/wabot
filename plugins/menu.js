@@ -3,42 +3,42 @@ let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
   'main': 'Main',
-  'game': 'Game',
+  'game': 'Juego',
   'xp': 'Exp & Limit',
   'sticker': 'Sticker',
   'kerang': 'Kerang Ajaib',
   'quotes': 'Quotes',
   'admin': 'Admin',
-  'group': 'Group',
+  'group': 'Grupo',
   'premium': 'Premium',
   'internet': 'Internet',
   'anonymous': 'Anonymous Chat',
   'nulis': 'MagerNulis & Logo',
-  'downloader': 'Downloader',
+  'downloader': 'Descargas',
   'tools': 'Tools',
-  'fun': 'Fun',
-  'database': 'Database',
+  'fun': 'Entretenimiento',
+  'database': 'Base de datos',
   'jadibot': 'Jadi Bot',
-  'owner': 'Owner',
+  'owner': 'Dueño',
   'host': 'Host',
-  'advanced': 'Advanced',
+  'advanced': 'Avanzado',
   'info': 'Info',
   '': 'No Category',
 }
 const defaultMenu = {
   before: `
 ╭─「 %me 」
-│ Hai, %name!
+│ Hola, %name!
 │
-│ Tersisa *%limit Limit*
-│ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
-│ %totalexp XP in Total
+│ Limites *%limit Limit*
+│ Nivel *%level (%exp / %maxexp)* [%xp4levelup de levelup]
+│ %totalexp XP en Total
 │ 
 │ Tanggal: *%week %weton, %date*
 │ Tanggal Islam: *%dateIslamic*
 │ Waktu: *%time*
 │
-│ Uptime: *%uptime (%muptime)*
+│ Tiempo encendido: *%uptime (%muptime)*
 │ Database: %rtotalreg of %totalreg
 │ Github:
 │ %github
